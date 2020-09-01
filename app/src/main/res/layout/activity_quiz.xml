@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bakcground"
+    tools:context=".activities.QuizActivity">
+
+    <TextView
+        android:id="@+id/txtTotalQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_next_background"
+        android:text="Sorular: 1/10"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Puan: 0" />
+
+            <TextView
+                android:id="@+id/txtViewTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:textSize="22sp"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="5dp"
+                android:text="00:30" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtQuestionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_next_background"
+            android:gravity="center"
+            android:padding="60dp"
+            android:text="Sorular buraya gelecek ?"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/radio_button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Şık 1"
+                android:textSize="22sp"
+                android:textColor="#141414"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:button="@null"
+                android:freezesText="true"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"
+                android:background="@drawable/option_default_background" />
+
+            <RadioButton
+                android:id="@+id/radio_button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Şık 2"
+                android:textSize="22sp"
+                android:textColor="#141414"
+                android:background="@drawable/option_default_background"
+                android:textAlignment="center"
+                android:button="@null"
+                android:textStyle="bold"
+                android:freezesText="true"
+                android:layout_marginTop="10dp"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/radio_button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Şık 3"
+                android:textSize="22sp"
+                android:textColor="#141414"
+                android:textAlignment="center"
+                android:button="@null"
+                android:textStyle="bold"
+                android:freezesText="true"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"
+                android:background="@drawable/option_default_background" />
+
+            <RadioButton
+                android:id="@+id/radio_button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Şık 4"
+                android:button="@null"
+                android:freezesText="true"
+                android:textSize="22sp"
+                android:textColor="#141414"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"
+                android:background="@drawable/option_default_background" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Sonraki"
+        android:textSize="25sp"
+        android:textColor="#FFFBFB"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:background="@drawable/button_next_background" />
+
+</LinearLayout>

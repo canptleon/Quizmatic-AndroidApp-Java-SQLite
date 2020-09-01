@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/main_bakcground"
+    android:orientation="vertical"
+    tools:context=".PlayActivity">
+
+
+    <ImageView
+        android:id="@+id/imgviewLogo"
+        android:src="@drawable/quiz_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:id="@+id/textviewLogoText"
+        android:text="Quizmatic"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="40sp"
+        android:textColor="#FF9800"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

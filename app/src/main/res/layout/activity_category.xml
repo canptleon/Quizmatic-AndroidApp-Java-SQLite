@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bakcground"
+    tools:context=".activities.CategoryActivity">
+
+    <Button
+        android:id="@+id/btnMath"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/play_button_bg"
+        android:text="Matematik"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnScience"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="288dp"
+        android:background="@drawable/play_button_bg"
+        android:text="Bilim"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSport"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:background="@drawable/play_button_bg"
+        android:layout_marginTop="120dp"
+        android:text="Spor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toEndOf="@+id/btnMath"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="288dp"
+        android:background="@drawable/play_button_bg"
+        android:text="Edebiyat"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toEndOf="@+id/btnMath"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCulture"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@drawable/play_button_bg"
+        android:text="Genel Kültür"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
